@@ -1,0 +1,174 @@
+@import url('https://use.typekit.net/zfc4puj.css');
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+// variables
+@import './variables/colors';
+@import './variables/mixins';
+
+// theme styles files
+@import './xtras';
+// @import './fonts';
+
+
+// custom css
+* {
+  font-family: "sofia-pro-soft" !important;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  // height: 100%;
+}
+
+.app-container {
+  position: relative;
+  // height: 100%;
+  // overflow-x: hidden;
+
+  overflow-x: hidden;
+}
+
+// Typography Style
+.title1,
+.title2,
+.title3,
+.title4,
+.title5,
+.title6 {
+  margin: 0;
+}
+
+.title1 {
+  font-size: 2rem;
+  line-height: 39px;
+  font-weight: bold;
+}
+
+.title2 {
+  font-size: 1.75rem;
+  line-height: 39px;
+  font-weight: 600;
+}
+
+.title3 {
+  font-size: 1.5rem;
+  line-height: 32px;
+  font-weight: 600;
+
+  // On mobile
+  @include mobile {
+    font-size: 1.3rem;
+  }
+}
+
+.title4 {
+  font-size: 1.3rem;
+  line-height: 39px;
+  font-weight: 600;
+}
+
+.title5 {
+  font-size: 1rem;
+  line-height: 20px;
+  font-weight: 600;
+}
+
+.title6 {
+  font-size: 0.875rem;
+  line-height: 20px;
+  font-weight: 600;
+}
+
+
+// ant-input
+.ant-input {
+  height: 56px;
+  border: 1px solid #E5E9F3;
+  border-radius: 12px;
+}
+
+// ant-btn-link
+.ant-btn-link {
+  font-weight: 500;
+  color: $theme-primary;
+}
+
+.ant-input-affix-wrapper {
+  padding: 0 15px;
+  border-radius: 12px;
+}
+
+.ant-form-item-label label {
+  font-size: 16px;
+  color: rgba(30, 44, 79, 0.64);
+}
+
+// btn-none
+.btn-none {
+  border: none;
+}
+
+.App {
+  overflow: hidden;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+// ground-active
+.ground-active {
+  color: green !important;
+}
+
+// image-card-style
+.image-card-style {
+  height: 250px;
+}
