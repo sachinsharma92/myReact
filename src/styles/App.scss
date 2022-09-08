@@ -125,6 +125,11 @@ body {
 
 .App {
   overflow: hidden;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .App-logo {
@@ -171,4 +176,19 @@ body {
 // image-card-style
 .image-card-style {
   height: 250px;
+}
+
+// bg-main
+.bg-main {
+  // background-color: #2D313C;
+   min-height: 100vh;
+}
+
+.heading-style {
+  color: black;
+  display: flex;
+
+  span {
+    color: red;
+  }
 }
