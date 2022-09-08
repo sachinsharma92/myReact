@@ -1,5 +1,7 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
 .App {
-  text-align: center;
+  overflow: hidden;
 }
 
 .App-logo {
@@ -35,4 +37,15 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+// ground-active
+.ground-active {
+  color: green !important;
+}
+
+// image-card-style
+.image-card-style {
+  height: 250px;
 }
